@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>INSTRUMENTOS MUSICALES</title>
+</head>
+<body>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="inst/cuerda7.jpg" alt="">
+                    </div>
+                    <p class="descripcion">GUITARRA RMC</p>
+                    <span class="precio">$ 3,300</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="inst/cuerda2.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>GUITARRA FENDER </p>
+                    <span class="precio">$ 5,800</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="inst/viento0.jpg" alt="">
+                    </div>
+                    <p class="descripcion">TROMPETA
+                    </p>
+                    <span class="precio">$ 2,600</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="inst/viento9.jpg" alt="">
+                    </div>
+                    <p class="descripcion">CLARINETE DORADO</p>
+                    <span class="precio">$ 4,800</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="inst/percusion4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">BATERIA TORNADO</p>
+                    <span class="precio">$ 20,030</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="inst/percusion0.jpg" alt="">
+                    </div>
+                    <p class="descripcion">BATERIA</p>
+                    <span class="precio">$ 30,000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="inst/frotacion2.jpg" alt="">
+                    </div>
+                    <p class="descripcion">VIOLIN</p>
+                    <span class="precio">$ 5.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="inst/electrico1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">GUITARRA ELECTRICA</p>
+                    <span class="precio">$ 7.800</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="inst/korg2.jpg" alt="" id="img">
+                <h2 id="modelo">KORG MICROKORG</h2>
+                <p id="descripcion"> SINTETIZADOR KORG MICROKORG</p>
+
+                <span class="precio" id="precio">$ 12,000</span>
+
+                <div class="fila">
+                    <div class="cANTIDAD">
+                        <label for="">CANTIDAD</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <button type="submit">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
